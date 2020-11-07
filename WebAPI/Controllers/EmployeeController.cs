@@ -32,8 +32,8 @@ namespace WebAPI.Controllers
         {
             string query = @"
                 select EmployeeId, EmployeeName, Department,
-                convert(varchar(10),DateOfJoining,120) as DateOfJoining
-                ,PhotoFileName
+                convert(varchar(10),DateOfJoining,120) as DateOfJoining,
+                PhotoFileName
                 from dbo.Employee
                 ";
             DataTable table = new DataTable();
